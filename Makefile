@@ -1,5 +1,5 @@
 CFLAGS=-std=c99 -Wall -Wextra -Werror
-LDFLAGS=-lutil -lpthread
+LDFLAGS=-lutil -pthread
 
 all: qmiserial2qmuxd
 
