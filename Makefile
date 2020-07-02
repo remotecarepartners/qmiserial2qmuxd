@@ -4,7 +4,7 @@ LDFLAGS=-lutil -pthread
 all: qmiserial2qmuxd
 
 qmiserial2qmuxd: qmiserial2qmuxd.o
-	$(CC) qmiserial2qmuxd.o $(LDFLAGS) -o $@
+	$(CC) qmiserial2qmuxd.o $(LDFLAGS) -o $@ -lpthread
 
 clean:
 	rm -f qmiserial2qmuxd qmiserial2qmuxd-android qmiserial2qmuxd.o
